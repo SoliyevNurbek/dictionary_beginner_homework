@@ -6,4 +6,15 @@ def find_max_key(data: dict):
     Returns:
         int: The maximum key in the dictionary.
     """
-    return 
+    max1=-521032103210201
+    for i in data:
+        if type(i)==int or type(i)==float:
+            if max1<i:
+                max1=i
+    return max1
+data = {
+    1: 'a', 
+    2: 'b', 
+    3: 'c'
+  }
+print(find_max_key(data))

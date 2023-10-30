@@ -6,4 +6,13 @@ def sum_dict_values(data: dict) -> int:
     Returns:
         int: The sum of all values in the dictionary
     '''
-    return 
+    sum=0
+    for i in data.values():
+        sum+=i
+    return sum
+data = {
+    'a': 1, 
+    'b': 2, 
+    'c': 3
+  }
+print(sum_dict_values(data))
